@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     
     
 
-    <form>
+    <form id="number-form" novalidate>
         <label for="number">Enter a number from 1 to 10</label>
-        <input type="number" name="number" min="1" max="10"/>
+        <input type="number" name="number" min="1" max="10" id="number-input">
 
         <div class="attempts-left">
-            You have 3 attemps left
+            
         </div>
         <button type="submit">Guess</button>
     </form>
 
     <div class="feedback">
-        You answered 9. The correct answer is higher!
+        
     </div>
 
 
