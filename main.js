@@ -62,7 +62,7 @@ function gameTurn(guess, number, attempts) {
 // set up attempts, number and guess variables
 
 let attempts = 3;
-attemptsLeft.textContent = `You have ${attempts} left`;
+attemptsLeft.textContent = `You have ${attempts} attempts left`;
 let number = getRandomNumber(1, 10);
 let guess;
 
@@ -71,7 +71,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   // lower and update attempts
   attempts -= 1;
-  attemptsLeft.textContent = `You have ${attempts} left`;
+  attemptsLeft.textContent = `You have ${attempts} attempts left`;
 
   gameTurn(guess, number, attempts);
 });
